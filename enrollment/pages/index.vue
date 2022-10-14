@@ -1,6 +1,23 @@
 <template>
   <section class="vh-100" style="background-color: #6b8f71;">
+    
     <div class="container fluid h-100">
+      <nav class="navbar justify-content-center navbar-expand-lg navbar-light" style="background-color: #466362;">
+        <a class="navbar-brand" href="#">Plantacy</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div id="navbarNavAltMarkup" class="collapse navbar-collapse" >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-dark" href="#"><NuxtLink to="/dashboard">Dashboard</NuxtLink></a>
+            <a class="nav-item nav-link" href="#"><NuxtLink to="/order">Orders</NuxtLink></a>
+            <a class="nav-item nav-link" href="#"><NuxtLink to="/product">Product</NuxtLink></a>
+            <a class="nav-item nav-link" href="#"><NuxtLink to="/customers">Customers</NuxtLink></a>
+         </div>
+        </div>
+      </nav>
+
       <div class="row d-flex justify-content-center h-100">
       <div class="column p-5">
         <div class="row d-flex justify-content-start align-items-center h-100">
