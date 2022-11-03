@@ -30,30 +30,30 @@
     <br><br>
     <table class="table table-striped table-bordered table-sm">
       <thead class="thead-light">
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Address</th>
-        <th>Contact Num</th>
-        <th class="col-2">Edit/Delete</th>
+        <th style="background-color: #c2a878;">First Name</th>
+        <th style="background-color: #c2a878;">Last Name</th>
+        <th style="background-color: #c2a878;">Address</th>
+        <th style="background-color: #c2a878;">Contact Num</th>
+        <th class="col-2" style="background-color: #c2a878;">Edit/Delete</th>
       </thead>
       <tr v-for="item in items" :key="item.name">
-        <td>
+        <td style="background-color: #fcf300;">
           <input v-if="item.edit" type="text" v-model="item.Fname"  v-on:keyup.enter="item.edit = !item.edit">
           <span v-else>{{item.Fname}} </span>
         </td>
-        <td>
+        <td style="background-color: #fcf300;">
           <input v-if="item.edit" type="text" v-model="item.Lname" v-on:keyup.enter="item.edit = !item.edit">
           <span v-else>{{item.Lname}} </span>
         </td>
-        <td>
+        <td style="background-color: #fcf300;">
           <input v-if="item.edit" type="text" v-model="item.address" v-on:keyup.enter="item.edit = !item.edit">
           <span v-else>{{item.address}} </span>
         </td>
-        <td>
+        <td style="background-color: #fcf300;">
           <input v-if="item.edit" type="text" v-model="item.contactnumber" v-on:keyup.enter="item.edit = !item.edit">
           <span v-else>{{item.contactnumber}} </span>
         </td>
-        <td><button @click="item.edit = !item.edit" class="btn btn-info"><i class="far fa-edit">Edit</i></button>
+        <td style="background-color: #fcf300;"><button @click="item.edit = !item.edit" class="btn btn-info"><i class="far fa-edit">Edit</i></button>
           <button @click="removeItem(index)" class="btn btn-danger"><i class="far fa-trash-alt">Delete</i></button></td>
       </tr>
     </table>
