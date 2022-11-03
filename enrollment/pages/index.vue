@@ -10,10 +10,10 @@
         <div id="navbarNavAltMarkup" class="collapse navbar-collapse" >
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link text-dark" href="#"><NuxtLink to="/dashboard">Dashboard</NuxtLink></a>
-            <a class="nav-item nav-link" href="#"><NuxtLink to="/order">Orders</NuxtLink></a>
-            <a class="nav-item nav-link" href="#"><NuxtLink to="/product">Product</NuxtLink></a>
-            <a class="nav-item nav-link" href="#"><NuxtLink to="/customers">Customers</NuxtLink></a>
+            <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+            <a class="nav-item nav-link" href="/order">Orders</a>
+            <a class="nav-item nav-link" href="/product">Product</a>
+            <a class="nav-item nav-link" href="/customers">Customers</a>
          </div>
         </div>
       </nav>
@@ -60,7 +60,7 @@
               </div>
 
             <div>
-              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              <p class="mb-0">Don't have an account? <a href="/registration" class="text-white-50 fw-bold">Sign Up</a>
               </p>
             </div>
 
