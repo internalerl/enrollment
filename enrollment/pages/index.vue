@@ -1,23 +1,8 @@
 <template>
   <section class="vh-100" style="background-color: #6b8f71;">
-    
-    <div class="container fluid h-100">
-      <nav class="navbar justify-content-center navbar-expand-lg navbar-light" style="background-color: #466362;">
-        <a class="navbar-brand" href="#">Plantacy</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div id="navbarNavAltMarkup" class="collapse navbar-collapse" >
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
-            <a class="nav-item nav-link" href="/order">Orders</a>
-            <a class="nav-item nav-link" href="/product">Product</a>
-            <a class="nav-item nav-link" href="/customers">Customers</a>
-         </div>
-        </div>
-      </nav>
 
+    <div class="container fluid h-100">
+      <NavBar/>
       <div class="row d-flex justify-content-center h-100">
       <div class="column p-5">
         <div class="row d-flex justify-content-start align-items-center h-100">
@@ -54,13 +39,13 @@
               <button class="btn btn-outline-light btn-lg px-5" type="submit">LOGIN</button>
 
               <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg">facebook</i></a>
+                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2">twitter</i></a>
+                <a href="#!" class="text-white"><i class="fab fa-google fa-lg">google</i></a>
               </div>
 
             <div>
-              <p class="mb-0">Don't have an account? <a href="/registration" class="text-white-50 fw-bold">Sign Up</a>
+              <p class="mb-0">Don't have an account? <NuxtLink to="/registration"><a class="text-white-50 fw-bold">Sign Up</a></NuxtLink>
               </p>
             </div>
 
@@ -69,13 +54,17 @@
       </div>
       </div>
       </div>
-    </div>  
+    </div>
   </section>
 </template>
 
 <script>
+
+import NavBar from "~/components/NavBar.vue"
+
 export default {
   name: 'IndexPage',
+  components: {NavBar,},
 }
 </script>
 
@@ -86,6 +75,6 @@ export default {
   width: 100%;
   height: 50%;
   background-size: cover;
-  background-image: url("https://scontent.fceb4-1.fna.fbcdn.net/v/t1.6435-9/129295277_5040198679338405_7831115223134395869_n.jpg?stp=dst-jpg_p640x640&_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHthuZzaGk167uGqzJFxkP1lye_PmtuidKXJ78-a26J0kVi6HVPWpGxhmIE2-nqDnNZ1GixsGU1Q5cY6vtSagvG&_nc_ohc=8TTXb-mvpuUAX811Idx&_nc_ht=scontent.fceb4-1.fna&oh=00_AT-54XsYmUWoKQcNB3UURpDwFcG20H_jg5L1MTrWJoQFBQ&oe=636CBB7F");
+  background-image: url("https://scontent.fceb4-1.fna.fbcdn.net/v/t1.6435-9/129295277_5040198679338405_7831115223134395869_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHthuZzaGk167uGqzJFxkP1lye_PmtuidKXJ78-a26J0kVi6HVPWpGxhmIE2-nqDnNZ1GixsGU1Q5cY6vtSagvG&_nc_ohc=Q8DaiCNcHSYAX9pmCDY&_nc_ht=scontent.fceb4-1.fna&oh=00_AfDz9RDeaGYNOTZA8taCrbj7R0MiSKKlsEIGZtGtMHYVcQ&oe=6394487F");
 }
 </style>
